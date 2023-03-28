@@ -9,6 +9,7 @@ instance/*
 
 ### Flask.Python Stack ###
 # Byte-compiled / optimized / DLL files
+__pycache__
 __pycache__/
 *.py[cod]
 *$py.class
@@ -132,6 +133,7 @@ celerybeat.pid
 .venv
 env/
 venv/
+.venv/
 ENV/
 env.bak/
 venv.bak/
