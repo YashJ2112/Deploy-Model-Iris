@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Iris Classifier</title>
+  </head>
+  <body>
+    <h1>Iris Classifier</h1>
+    <form method="POST" action="{{ url_for('predict') }}">
+      <label>Sepal Length</label>
+      <input type="number" step="any" name="sepal_length" required />
+      <br />
+      <label>Sepal Width</label>
+      <input type="number" step="any" name="sepal_width" required />
+      <br />
+      <label>Petal Length</label>
+      <input type="number" step="any" name="petal_length" required />
+      <br />
+      <label>Petal Width</label>
+      <input type="number" step="any" name="petal_width" required />
+      <br />
+      <button type="submit">Predict</button>
+    </form>
+    {% if prediction %}
+    <h2>Prediction:</h2>
+    <p>{{ prediction }}</p>
+    {% endif %}
+  </body>
+</html>
