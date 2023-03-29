@@ -1,9 +1,9 @@
 import pandas as pd
+import pickle
 from sklearn import svm
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-import pickle
 
 # iris = datasets.load_iris()
 # X, y = iris.data, iris.target
